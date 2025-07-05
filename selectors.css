@@ -1,0 +1,48 @@
+#test-el{
+
+
+    color: darkseagreen;
+}
+
+.success{
+
+
+    color: darkviolet;
+}
+
+/* in class and id , id will have more priority*/
+
+
+#p1{
+
+color: darkgreen;
+
+
+}
+
+/* all p element having class as para */
+
+p.para{
+
+
+    color: fuchsia;
+}
+
+/* 
+child selector-- direct children
+*/
+
+ div>p{
+
+
+    color: darkorchid;
+} 
+
+/* decendants- selects all derscendants in any generation */
+
+/* div p{
+
+    color: aquamarine; ------> comment nikal kr apply krke dekh vice-versa upr ke liye --diff dikh jayega
+}  */
+
+

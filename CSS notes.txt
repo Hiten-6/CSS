@@ -1,0 +1,5 @@
+inheritance means child taking the property of their parents 
+
+not all properties are inheritable eg- margin,width
+
+between inherit property >>>> khudka property(even if specificity is higher)-->

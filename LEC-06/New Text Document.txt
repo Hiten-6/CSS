@@ -1,0 +1,5 @@
+by default background image  repeat hi hota hai
+     aspect ratio is height and width ka ratio  and it will increase the height until it reaches the dimension 
+
+
+     

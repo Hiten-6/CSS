@@ -1,0 +1,55 @@
+
+/* adjacent sibling selector  */
+/*neeche wala closet sibling */
+
+p + h1 {
+    color: red;
+}
+
+
+/* general sibling selector - neeche wala all siblings  */
+
+p ~ h1{
+    color: green;
+}
+
+
+#box-model{
+
+    /* border-color: green;
+    border-width: 3px;
+    border-style: solid; */
+
+
+    /* shorthand property of border */
+
+
+    border: 2px dotted red;
+    height: 400px;
+    width: 400px;
+    margin: auto;
+
+    /* padding-left: 20;
+padding-bottom: 34;
+padding-right: 45;
+padding-top: 45; */
+
+/* SHORTHAND PROPERTY FOR PADDING */
+
+padding: 20px;
+
+/* padding: 20 40 40 2 0; */
+
+margin: 20px;
+/* h2 ki bottom margin and div ki top margin will collaspe together!!! */
+
+
+/* 50% of it's corresponding dimensions (height and width) */
+
+
+border-radius:50% ;
+
+
+
+
+}

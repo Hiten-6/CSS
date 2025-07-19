@@ -1,0 +1,54 @@
+.container > div{
+
+    height: 100px;
+    width: 100px;
+    background-color: aquamarine;
+    margin: 20px;
+    border: 2px solid black;
+
+
+}
+
+#div1{
+    background-color: crimson;
+
+}
+
+#div2{
+
+    background-color: darkcyan;
+}
+
+#div{
+
+
+    background-color: cornflowerblue;
+
+
+}
+
+
+#div{
+
+    background-color: darkmagenta;
+}
+
+#div1{
+
+
+    position: static;
+}
+
+#div2{
+
+    position: relative;
+}
+
+#div2{
+
+    position: relative;
+    left: 50px;
+    top: 100px;
+    bottom: 100px;
+    right: 50px;
+}

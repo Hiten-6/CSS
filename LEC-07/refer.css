@@ -1,0 +1,22 @@
+.container{
+    background-color: beige;
+    width: 1200px;
+}
+img{
+    width: 100%;
+    /* 100% of parent - div */
+    border-radius: 50%;
+    height: 400px;
+    object-fit: cover;
+    
+}
+
+.container > div{
+    
+    display: inline-block;
+    width: calc(25% - 24px);
+    vertical-align: top;
+    text-align: center;
+    margin: 12px;
+
+}

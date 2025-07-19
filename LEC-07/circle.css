@@ -1,0 +1,49 @@
+.ok{
+
+    background-color: rgb(162, 135, 246);
+}
+
+img{
+
+    object-fit: cover;
+    object-position: top center;
+
+
+}
+.ok img{
+
+border-radius: 50%;
+width: 24%;
+
+}
+
+
+.ok div{
+
+    display: inline;
+    
+}
+
+ok h2{
+
+    display: inline;
+}
+
+
+#but{
+
+
+    background-color: rgb(0, 255, 255);
+    margin: 10px;
+    padding: 10px;
+    color: black;
+    border: 10px double rgb(0 255, 255);
+    display: inline-block;
+    border-radius: 20px;
+text-transform: uppercase;
+    text-decoration: none;
+    
+
+
+
+}

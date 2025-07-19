@@ -1,0 +1,60 @@
+.sp{
+
+    margin: 20px;
+    padding: 40px;
+    border: 2px solid red;
+    width: 500px;
+    display: inline;
+}
+
+.ip{
+
+    margin: 20px;
+    padding: 40px;
+    border: 2px solid green;
+    width: 500px;
+    display: block;
+}
+
+.up{
+
+    margin: 20px;
+    padding: 40px;
+    border: 2px solid blue;
+    width: 500px;
+    display: inline-block;
+}
+
+/* inline- meaning jitni jagah chiye utni hi lega and margin,padding,width not represented/respected properly behaves stranges!! */
+
+/* block- poori jagah lega margin, padding width are  */
+
+
+
+.container{
+    width: 900px;
+    background-color: blue;
+    height: 500px;
+}
+
+#div1{
+
+    background-color: beige;
+}
+
+
+#div2{
+
+    background-color: aquamarine;
+}
+.container>div{
+
+    display: inline-block;
+    width: 50%;
+}
+
+
+
+
+
+/* in case of display inline-block a space or multiple spaces between two inline-block(which we have changed from ) elements takes up extra  space on thr screen does 50% width space to both the element wolud not work because 1px is by the space */

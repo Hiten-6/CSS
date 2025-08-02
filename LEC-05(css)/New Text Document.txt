@@ -1,0 +1,31 @@
+FLEXBOX:-
+
+flexbox is a one-dimensional layout method for laying out items in rows and columns
+-vertical centering
+-dynamic sizing
+-custom ordering(we can give the order to the text and image that what should be displayed first doesn't matter in what sequence they are written in jiska order jyada wo Pehle  ayga screen pr.)
+
+display:-flex
+~is applied to the immediate parent
+
+flex-direction:(applies on parent)
+~main axis determines how flex items will come in flex container
+
+flex-direction:row(x axis me left to right)
+flex-direction:row-reverse(x axis me right to left)
+[flex-direction:row/row-reverse me cross-axis is y axis]
+
+flex-direction:column(y axis me top to bottom)
+flex-direction:column-reverse(y axis me bottom to top)
+[flex-direction:column/column-reverse me cross axis is x axis]
+
+flex-wrap:wrap(applies on parent)
+used only when shrink is used and wrap works against main axis 
+
+flex-shrink:(applies on child)
+is used to shrink any child/box
+
+if boxes go out of the container in the direction of main axis it will wrap against main axis direction.
+
+flex-flow is a short hand property for flex-direction and flex-wrap
+[flex-flow:flex-wrap flex direction]

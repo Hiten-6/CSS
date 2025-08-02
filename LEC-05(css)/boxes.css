@@ -1,0 +1,60 @@
+.boxes{
+
+    display: flex;
+    border: 2px solid red;
+    width: 400px;
+    height: 500px;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+}
+
+.boxes>div{
+
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    flex-shrink: 0;
+}
+
+
+
+.boxes2{
+
+    display: flex;
+    border: 2px solid red;
+    height: 400px;
+    width: 400px;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+}
+
+.boxes2>div{
+
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    flex-shrink: 0;
+}
+
+
+
+.parent{
+
+    border: 2px solid red;
+    /* justify content works across and axis and align items works across cross axis */
+flex-direction: column;
+height: 500px;
+width: 400px;
+justify-content: space-around;
+align-items: end;
+    height: 600px;
+}
+
+.parent>p{
+
+    border: 2px solid black;
+}
+
+

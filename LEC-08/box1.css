@@ -1,0 +1,29 @@
+.container{
+
+    height: 100vh;
+    width: 100vh;
+    
+    align-items: center;
+    
+    justify-content: center;
+    border: 2px solid black;
+
+}
+
+.container>div{
+
+    height: 200px;
+    width: 200px;
+    border: 2px solid red;
+}
+
+.box1{
+
+    align-self: flex-start;
+}
+
+.box3{
+
+    align-self: self-end;
+}
+

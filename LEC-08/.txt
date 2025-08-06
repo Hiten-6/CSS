@@ -1,0 +1,4 @@
+align-self:-
+
+it works on cross axis 
+is used to align individual boxes on start/end/center

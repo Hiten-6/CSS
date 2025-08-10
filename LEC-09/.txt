@@ -1,0 +1,12 @@
+    Extra small upto 600px (mobile phones)
+
+    Small 600px to 768px (Potrait tablets, bigger phones also)
+
+    Medium 768 to 992px (Landscape Tablets or small laptop screen)
+
+    Large 992px to 1200px (Laptops or small desktop)
+
+    Extra Large over 1200px (Desktops) 
+
+
+    

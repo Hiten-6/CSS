@@ -1,0 +1,75 @@
+div>div{
+    border: 2px solid red;
+}
+
+*{
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+justify-content: center;
+width: 100vw;
+}
+
+.box1{
+
+    background-color: aquamarine;
+    height: 200px;
+    width: 200px;
+
+}
+
+
+.box2{
+
+    background-color: rgb(127, 161, 255);
+    height: 200px;
+    width: 200px;
+
+}
+
+
+.box3{
+
+    background-color: rgb(255, 127, 214);
+    height: 200px;
+    width: 200px;
+
+}
+
+
+.box4{
+
+    background-color: rgb(238, 255, 127);
+    height: 200px;
+    width: 200px;
+
+}
+
+@media (max-width:600px){
+
+    .container{
+
+flex-direction: column;
+        
+    }
+}
+
+@media (min-width:600px) and (max-width:768px){
+    .container{
+        flex-wrap: wrap;
+  
+    }
+    .box1,.box2,.box3,.box4{
+
+        width: 50%
+    }
+}
+
+
+@media (min-width:1200px){
+
+    .conatiner{
+        flex-direction: row;
+    }
+}

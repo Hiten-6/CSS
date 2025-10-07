@@ -3,3 +3,29 @@ inheritance means child taking the property of their parents
 not all properties are inheritable eg- margin,width
 
 between inherit property >>>> khudka property(even if specificity is higher)-->
+
+
+
+
+
+
+
+DIFF WAYS FOR COLORS IN CSS
+
+color: rgb(0,0,255); 
+
+color: rgba(0,0,255,0.6);---point wala no is alpha value --- is for adjusting the opacity of the color
+
+color: ffffff --- in hexadecimal way
+
+HLS-
+
+
+
+
+
+display:- flex is applied to the immediate parent
+
+flex-direction:- main axis determines how flex items will come in flex container
+
+

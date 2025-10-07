@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Book Management</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <div class="main-container">
+        <header>
+            <h1>Library Book Management System</h1>
+            <p>Manage book inventory and track current stock</p>
+        </header>
+
+        <nav class="tab-navigation">
+            <button class="nav-button active" id="current-books-btn">Current Books</button>
+            <button class="nav-button" id="add-book-btn">Add New Book</button>
+        </nav>
+
+        <div class="view-section" id="current-books-view">
+            <div class="summary-cards">
+                <div class="card">
+                    <span id="total-books-count" class="count">0</span>
+                    <p>Total Books</p>
+                </div>
+                <div class="card">
+                    <span id="genres-in-stock-count" class="count">0</span>
+                    <p>Unique Genres</p>
+                </div>
+                <div class="card">
+                    <span id="filtered-results-count" class="count">0</span>
+                    <p>Filtered Results</p>
+                </div>
+            </div>
+
+            <div class="search-area">
+                <input type="text" id="search-input" placeholder="Search by title, author, or genre...">
+            </div>
+
+            <div id="book-list-container" class="book-list-container">
+                <p id="no-books-message" class="message-text" style="display: none;">No books found in the library.</p>
+                <p id="no-match-message" class="message-text" style="display: none;">No matching books found.</p>
+            </div>
+        </div>
+
+        <div class="view-section hidden" id="add-book-view">
+            <h2>Add New Book to Library</h2>
+            <form id="book-form">
+                <div class="form-group">
+                    <label for="book-title">Book Title</label>
+                    <input type="text" id="book-title" required>
+                </div>
+                <div class="form-group">
+                    <label for="book-author">Author Name</label>
+                    <input type="text" id="book-author" required>
+                </div>
+                <div class="form-group">
+                    <label for="book-genre">Genre</label>
+                    <input type="text" id="book-genre" placeholder="e.g., Fantasy, Sci-Fi, Thriller" required>
+                </div>
+                <div class="form-group">
+                    <label for="publication-year">Publication Year</label>
+                    <input type="number" id="publication-year" min="1000" max="2099" value="2023" required>
+                </div>
+                 <div class="form-group">
+                    <label for="isbn">ISBN (Optional)</label>
+                    <input type="text" id="isbn" pattern="^(?:ISBN(?:-13)?:?)(?=[0-9]{13}$)([0-9]{3}-){2}[0-9]{3}[0-9X]$" placeholder="e.g., 978-3-16-148410-0">
+                    <small>Format: 978-X-XX-XXXXXX-X</small>
+                </div>
+                <button type="submit" id="submit-book-btn" class="action-button">Add Book</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

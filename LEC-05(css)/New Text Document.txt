@@ -29,3 +29,13 @@ if boxes go out of the container in the direction of main axis it will wrap agai
 
 flex-flow is a short hand property for flex-direction and flex-wrap
 [flex-flow:flex-wrap flex direction]
+
+
+justify content works on main axis
+justify-content:- start is always left and end is always right
+flex-start is where the main axis starts
+flex-end is where the main axis ends
+
+
+
+align items works on cross axis.

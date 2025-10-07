@@ -1,0 +1,364 @@
+/* General Body and Font Styling */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f0f2f5; /* Light background */
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align to top for longer content */
+    min-height: 100vh;
+}
+
+.main-container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    width: 100%;
+    max-width: 900px; /* Wider than the previous example to accommodate more content */
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+header h1 {
+    color: #007bff; /* Primary blue for headings */
+    margin: 0 0 10px;
+    font-size: 2.5em;
+}
+
+header p {
+    color: #666;
+    font-size: 1.1em;
+}
+
+/* Navigation Tabs */
+.tab-navigation {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.nav-button {
+    background-color: transparent;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1.1em;
+    cursor: pointer;
+    color: #555;
+    transition: all 0.3s ease;
+    border-bottom: 3px solid transparent; /* For active indicator */
+    margin: 0 5px;
+}
+
+.nav-button:hover:not(.active) {
+    color: #007bff;
+}
+
+.nav-button.active {
+    color: #007bff;
+    border-bottom-color: #007bff; /* Blue line for active tab */
+    font-weight: bold;
+}
+
+/* View Sections */
+.view-section {
+    padding: 20px 0;
+}
+
+.view-section.hidden {
+    display: none;
+}
+
+/* Summary Cards */
+.summary-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    margin-bottom: 30px;
+    flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+}
+
+.card {
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    flex: 1; /* Allow cards to grow and shrink */
+    min-width: 180px; /* Minimum width before wrapping */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.card .count {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #007bff;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.card p {
+    color: #6c757d;
+    font-size: 0.95em;
+}
+
+/* Search Area */
+.search-area {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#search-input {
+    width: 80%;
+    max-width: 500px;
+    padding: 12px 20px;
+    border: 2px solid #ced4da;
+    border-radius: 25px; /* Rounded search bar */
+    font-size: 1.05em;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    outline: none;
+}
+
+#search-input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Book List Container */
+.book-list-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Responsive grid */
+    gap: 25px;
+}
+
+/* Individual Book Item */
+.book-item {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    position: relative;
+}
+
+.book-item:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+}
+
+.book-item h3 {
+    color: #007bff;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.4em;
+    max-width: calc(100% - 60px); /* Space for buttons */
+}
+
+.book-item p {
+    margin: 5px 0;
+    color: #555;
+    font-size: 0.95em;
+}
+
+.book-item .genre-tag {
+    display: inline-block;
+    background-color: #e9f5ff; /* Light blue tag */
+    color: #007bff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.8em;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Action Buttons (Edit/Delete) */
+.book-actions {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.book-actions .action-icon {
+    background: none;
+    border: none;
+    font-size: 1.1em;
+    cursor: pointer;
+    margin-left: 10px;
+    color: #6c757d;
+    transition: color 0.2s;
+}
+
+.action-icon.edit-icon:hover {
+    color: #28a745; /* Green for edit */
+}
+
+.action-icon.delete-icon:hover {
+    color: #dc3545; /* Red for delete */
+}
+
+/* Form Styling (Add New Book) */
+#add-book-view h2 {
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #495057;
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group input[type="email"] { /* Add email if ever needed */
+    width: calc(100% - 24px); /* Account for padding */
+    padding: 12px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-group input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    outline: none;
+}
+
+.form-group small {
+    display: block;
+    margin-top: 5px;
+    color: #6c757d;
+    font-size: 0.85em;
+}
+
+.action-button {
+    display: block;
+    width: 100%;
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: 25px;
+}
+
+.action-button:hover {
+    background-color: #0056b3;
+}
+
+/* Messages (e.g., No books found) */
+.message-text {
+    text-align: center;
+    color: #6c757d;
+    font-style: italic;
+    margin-top: 20px;
+    grid-column: 1 / -1; /* Span across all columns in grid */
+}
+
+/* Simple Alert/Confirmation Styles (JS will create these dynamically) */
+.custom-alert-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.custom-alert-box {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+}
+
+.custom-alert-box h3 {
+    color: #007bff;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+.custom-alert-box p {
+    margin-bottom: 25px;
+    color: #495057;
+    font-size: 1.1em;
+}
+
+.custom-alert-box .alert-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.custom-alert-box .alert-button {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.custom-alert-box .alert-button.ok-button {
+    background-color: #007bff;
+    color: white;
+}
+
+.custom-alert-box .alert-button.ok-button:hover {
+    background-color: #0056b3;
+}
+
+.custom-alert-box .alert-button.cancel-button {
+    background-color: #6c757d;
+    color: white;
+}
+
+.custom-alert-box .alert-button.cancel-button:hover {
+    background-color: #5a6268;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .summary-cards {
+        flex-direction: column;
+    }
+    .card {
+        width: 100%;
+        min-width: unset;
+    }
+    .main-container {
+        padding: 20px;
+    }
+    header h1 {
+        font-size: 2em;
+    }
+}
